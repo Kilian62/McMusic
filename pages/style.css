@@ -1,0 +1,193 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Rubik Bubbles", system-ui;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+header {
+  background-color: red;
+  padding: 100px;
+  width: 89%;
+  position: relative;
+  height: 110px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.navbar2 {
+  background-color: black;
+  padding: 100px;
+  width: 100%;
+  margin-left: -100px;
+  margin-top: -100px;
+  height: 100px;
+  position: relative;
+}
+footer {
+  background-color: red;
+  padding: 100px;
+  width: 89%;
+  position: relative;
+  height: 110px;
+  margin-left: -20px;
+  margin-top: -20px;
+  font-size: 4vh;
+}
+
+.footer2 {
+  background-color: black;
+  padding: 100px;
+  width: 100%;
+  margin-left: -100px;
+  margin-top: -87px;
+  height: 100px;
+  position: relative;
+}
+.footer .texte {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  height: 200px;
+}
+nav {
+  background-color: red;
+  padding: 50px;
+  height: 120vh;
+  width: 250px;
+  position: relative;
+  margin-left: -20px;
+}
+.barre2 {
+  background-color: black;
+  padding: 70px;
+  height: 130vh;
+  width: 200px;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: relative;
+}
+
+.box {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin: 20px;
+}
+.box img {
+  filter: blur(5px);
+  transition: 0.5s;
+}
+.box :hover img {
+  filter: blur(0px);
+  height: 350px;
+  transition: 0.5s;
+}
+.contenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  flex-basis: calc(30% - 20px);
+  margin: 10px;
+  border-radius: 70px;
+}
+.contenu2 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 300px;
+  flex-basis: calc(100% - 20px);
+  margin: 10px;
+  flex-direction: column;
+  font-size: 3vh;
+}
+.contenu2 h2 {
+  font-size: 4vh;
+}
+
+.titre {
+  display: flex;
+  justify-content: end;
+  margin-top: -150px;
+  font-size: 300%;
+  cursor: default;
+
+  font-weight: 200;
+}
+.titre :hover {
+  transition: 10s;
+  background-image: url(https://www.icegif.com/wp-content/uploads/2022/09/icegif-1624.gif);
+  background-size: cover;
+  background-position: center;
+  color: red;
+}
+
+.titre img {
+  display: none;
+}
+.titre :hover img {
+  display: block;
+}
+ul {
+  list-style-type: none;
+  cursor: default;
+}
+li {
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.texte {
+  display: flex;
+  justify-content: end;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.moi {
+  display: flex;
+  align-items: center;
+  margin-top: 10vh;
+  flex-direction: column;
+}
+
+.imgmoi {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+}
+
+.imgmoi img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.imgmoi:hover img {
+  opacity: 0;
+}
+
+.imgmoi:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/hasbulla1.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
